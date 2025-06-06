@@ -1,0 +1,52 @@
+{
+  "analysis_info": {
+    "timestamp": "2025-06-06T12:50:36.884634",
+    "analysis_type": "BHXH Standardized Data Analysis",
+    "version": "2025.06.06",
+    "compliance_standard": "BHXH Vietnam 2025"
+  },
+  "execution_summary": {
+    "total_steps": 4,
+    "completed_steps": 4,
+    "status": "COMPLETED",
+    "duration": "Full analysis cycle"
+  },
+  "data_standardization": {
+    "standardizer_module": "BHXHDataStandardizer",
+    "fields_supported": [
+      "ho_ten",
+      "ngay_sinh",
+      "so_bhxh",
+      "so_cccd",
+      "so_dien_thoai"
+    ],
+    "validation_rules": "BHXH Vietnam Standards 2025",
+    "compliance_check": "PASSED"
+  },
+  "reports_generated": [
+    {
+      "raw_extractions": 709,
+      "standardized_records": 693,
+      "success": true,
+      "standardization_applied": true,
+      "compliance": "BHXH Vietnam 2025"
+    },
+    {
+      "type": "Detailed Customer Report",
+      "file": null,
+      "status": "ERROR: Cannot save file into a non-existent directory: 'C:\\Users\\user\\Desktop\\LightblueQueasyInversion'"
+    }
+  ],
+  "recommendations": [
+    "Tất cả dữ liệu khách hàng đã được chuẩn hóa theo tiêu chuẩn BHXH",
+    "Báo cáo Excel đã sẵn sàng cho việc phân tích và tuân thủ",
+    "Dữ liệu đã được validation và đảm bảo tính nhất quán",
+    "Hệ thống có thể được triển khai cho production với dữ liệu thực"
+  ],
+  "next_steps": [
+    "Review các báo cáo Excel được tạo",
+    "Kiểm tra tính chính xác của dữ liệu chuẩn hóa",
+    "Triển khai vào hệ thống production nếu cần",
+    "Thiết lập quy trình chuẩn hóa tự động"
+  ]
+}

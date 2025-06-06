@@ -1,0 +1,85 @@
+{
+  "analysis_timestamp": "2025-06-06T16:56:26.974699",
+  "summary": {
+    "total_tokens_found": 10774,
+    "total_customer_data_points": 107246,
+    "total_database_exposures": 694,
+    "total_session_data": 2718,
+    "total_vulnerabilities": 1507
+  },
+  "tokens_analysis": {
+    "unique_tokens": 2690,
+    "token_type_distribution": {
+      "Session/Authentication Token": 9634,
+      "Base64 Token": 656,
+      "Unknown Token": 264,
+      "MD5 Hash/Session ID": 196,
+      "SHA1 Hash": 24
+    },
+    "sample_tokens": [
+      "exploitation_report_20250606_0...",
+      "REBvLsnoySwDi8Rrpglf7QEFlRXH52...",
+      "oAQMkYOChZ3AJIGY5buwPbvTkC7lPK...",
+      "iMf5THfqukSYut7sl9HwUg...",
+      "layouts/15/1033/styles/Themabl...",
+      "xXYZY4hciX287lShPZuClw...",
+      "WBDzE8Kp2NMrldHsGGXlEQ...",
+      "cXv35JACAh0ZCqUwKU592w...",
+      "fMjvUPEj-YMFBg_REBvLsnoySwDi8R...",
+      "S11vfGURQYVuACMEY0tLTg..."
+    ]
+  },
+  "customer_data_analysis": {
+    "data_type_distribution": {
+      "ma_kiem_tra": 85477,
+      "ma_bao_hiem": 7771,
+      "so_cmnd": 8562,
+      "so_dien_thoai": 5436
+    },
+    "total_records": 107246,
+    "sample_data": [
+      {
+        "type": "ma_kiem_tra",
+        "value": "829773***"
+      },
+      {
+        "type": "ma_kiem_tra",
+        "value": "SELECT***"
+      },
+      {
+        "type": "ma_kiem_tra",
+        "value": "SELECT***"
+      },
+      {
+        "type": "ma_kiem_tra",
+        "value": "OPTIONS***"
+      },
+      {
+        "type": "ma_kiem_tra",
+        "value": "SAMEORIGIN***"
+      }
+    ]
+  },
+  "database_exposure_analysis": {
+    "exposures_found": 694,
+    "session_data_points": 2718,
+    "critical_findings": [
+      "SessionStateService_356ec96765eb4cc6b687ea3bb1be01c4",
+      "BHXH\\sharepoint_portal user compromise",
+      "ASP.NET session tokens exposed"
+    ]
+  },
+  "vulnerability_summary": {
+    "vulnerability_types": {
+      "SQL Injection": 1435,
+      "Time-based Vulnerability": 72
+    },
+    "total_vulnerabilities": 1507,
+    "critical_issues": [
+      "Time-based SQL Injection confirmed",
+      "Database error exposure",
+      "Session token leakage",
+      "SharePoint authentication bypass"
+    ]
+  }
+}

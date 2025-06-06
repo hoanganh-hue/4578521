@@ -1,0 +1,184 @@
+{
+  "validation_timestamp": "2025-06-06T12:19:26.566838",
+  "test_cases": [
+    {
+      "ho_ten": "nguyễn văn a",
+      "ngay_sinh": "15/03/1985",
+      "so_bhxh": "01-12345678",
+      "so_cccd": "001234567890",
+      "so_dien_thoai": "0987654321"
+    },
+    {
+      "ho_ten": "TRẦN THỊ B",
+      "ngay_sinh": "1990-07-22",
+      "so_bhxh": "7912345678",
+      "so_cccd": "079123456789",
+      "so_dien_thoai": "+84976543210"
+    }
+  ],
+  "validation_results": [
+    {
+      "original_data": {
+        "ho_ten": "nguyễn văn a",
+        "ngay_sinh": "15/03/1985",
+        "so_bhxh": "01-12345678",
+        "so_cccd": "001234567890",
+        "so_dien_thoai": "0987654321"
+      },
+      "standardized_data": {
+        "ho_ten": "Nguyễn Văn A",
+        "ngay_sinh": "1985-03-15",
+        "so_bhxh": "0112345678",
+        "so_cccd": "001234567890"
+      },
+      "validation_summary": {
+        "total_fields": 5,
+        "valid_fields": 4,
+        "invalid_fields": 1,
+        "error_count": 1
+      },
+      "field_results": {
+        "ho_ten": {
+          "original": "nguyễn văn a",
+          "standardized": "Nguyễn Văn A",
+          "is_valid": true,
+          "errors": [],
+          "components": {
+            "ho": "Nguyễn",
+            "ten_dem": "Văn",
+            "ten": "A"
+          },
+          "original_key": "ho_ten"
+        },
+        "ngay_sinh": {
+          "original": "15/03/1985",
+          "standardized": "1985-03-15",
+          "is_valid": true,
+          "errors": [],
+          "format_detected": "DD-MM-YYYY",
+          "original_key": "ngay_sinh"
+        },
+        "so_bhxh": {
+          "original": "01-12345678",
+          "standardized": "0112345678",
+          "is_valid": true,
+          "errors": [],
+          "province_code": "01",
+          "province_name": "Hà Nội",
+          "original_key": "so_bhxh"
+        },
+        "so_cccd": {
+          "original": "001234567890",
+          "standardized": "001234567890",
+          "is_valid": true,
+          "errors": [],
+          "province_code": "001",
+          "province_name": "Hà Nội",
+          "gender_century_code": "2",
+          "birth_year": "34",
+          "gender": "Nam",
+          "century": "21 (2000-2099)",
+          "original_key": "so_cccd"
+        },
+        "so_dien_thoai": {
+          "original": "0987654321",
+          "standardized": "",
+          "is_valid": false,
+          "errors": [
+            "Mã nhà mạng không hợp lệ: 98"
+          ],
+          "provider_code": "",
+          "provider_name": "",
+          "original_key": "so_dien_thoai"
+        }
+      },
+      "errors": [
+        "so_dien_thoai: Mã nhà mạng không hợp lệ: 98"
+      ]
+    },
+    {
+      "original_data": {
+        "ho_ten": "TRẦN THỊ B",
+        "ngay_sinh": "1990-07-22",
+        "so_bhxh": "7912345678",
+        "so_cccd": "079123456789",
+        "so_dien_thoai": "+84976543210"
+      },
+      "standardized_data": {
+        "ho_ten": "Trần Thị B",
+        "ngay_sinh": "1990-07-22",
+        "so_bhxh": "7912345678",
+        "so_cccd": "079123456789"
+      },
+      "validation_summary": {
+        "total_fields": 5,
+        "valid_fields": 4,
+        "invalid_fields": 1,
+        "error_count": 1
+      },
+      "field_results": {
+        "ho_ten": {
+          "original": "TRẦN THỊ B",
+          "standardized": "Trần Thị B",
+          "is_valid": true,
+          "errors": [],
+          "components": {
+            "ho": "Trần",
+            "ten_dem": "Thị",
+            "ten": "B"
+          },
+          "original_key": "ho_ten"
+        },
+        "ngay_sinh": {
+          "original": "1990-07-22",
+          "standardized": "1990-07-22",
+          "is_valid": true,
+          "errors": [],
+          "format_detected": "YYYY-MM-DD",
+          "original_key": "ngay_sinh"
+        },
+        "so_bhxh": {
+          "original": "7912345678",
+          "standardized": "7912345678",
+          "is_valid": true,
+          "errors": [],
+          "province_code": "79",
+          "province_name": "TP. Hồ Chí Minh",
+          "original_key": "so_bhxh"
+        },
+        "so_cccd": {
+          "original": "079123456789",
+          "standardized": "079123456789",
+          "is_valid": true,
+          "errors": [],
+          "province_code": "079",
+          "province_name": "TP. Hồ Chí Minh",
+          "gender_century_code": "1",
+          "birth_year": "23",
+          "gender": "Nữ",
+          "century": "20 (1900-1999)",
+          "original_key": "so_cccd"
+        },
+        "so_dien_thoai": {
+          "original": "+84976543210",
+          "standardized": "",
+          "is_valid": false,
+          "errors": [
+            "Mã nhà mạng không hợp lệ: 97"
+          ],
+          "provider_code": "",
+          "provider_name": "",
+          "original_key": "so_dien_thoai"
+        }
+      },
+      "errors": [
+        "so_dien_thoai: Mã nhà mạng không hợp lệ: 97"
+      ]
+    }
+  ],
+  "summary": {
+    "total_tests": 2,
+    "passed_tests": 0,
+    "standardizer_status": "OPERATIONAL"
+  }
+}
